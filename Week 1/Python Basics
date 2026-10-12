@@ -1,0 +1,342 @@
+
+# ==================================================
+# WEEK 1: PYTHON BASICS
+# Author: Bhagyashree Muguli
+# Description: Python basics with explanations and examples
+# ==================================================
+
+
+# 1. INTRODUCTION TO PYTHON
+# Python is a high-level, interpreted programming language.
+# print() displays output on the screen.
+
+print("\n--- 1. INTRODUCTION TO PYTHON ---")
+
+print("Hello, World!")
+print("My name is Bhagyashree")
+print("Welcome to Python Programming")
+
+
+# 2. VARIABLES
+# Variables are names used to store values.
+
+print("\n--- 2. VARIABLES ---")
+
+name = "Bhagyashree"
+age = 22
+height = 5.3
+is_student = True
+
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Is student:", is_student)
+
+age = 23
+print("Updated age:", age)
+
+
+# 3. DATA TYPES
+# Data types define the kind of value stored in a variable.
+
+print("\n--- 3. DATA TYPES ---")
+
+a = 10
+b = 10.5
+c = "Python"
+d = True
+e = [1, 2, 3]
+f = (1, 2, 3)
+g = {1, 2, 3}
+h = {"name": "Bhagya"}
+i = None
+
+print(a, type(a))  # int
+print(b, type(b))  # float
+print(c, type(c))  # str
+print(d, type(d))  # bool
+print(e, type(e))  # list
+print(f, type(f))  # tuple
+print(g, type(g))  # set
+print(h, type(h))  # dict
+print(i, type(i))  # NoneType
+
+
+# 4. INPUT AND OUTPUT
+# input() accepts information from the user.
+# print() displays information.
+
+print("\n--- 4. INPUT AND OUTPUT ---")
+
+user_name = input("Enter your name: ")
+print("Welcome", user_name)
+print(f"Hello, {user_name}!")
+
+
+# 5. TYPE CASTING
+# Type casting converts one data type into another.
+
+print("\n--- 5. TYPE CASTING ---")
+
+number_text = "25"
+
+number = int(number_text)
+decimal_number = float(number_text)
+text_again = str(number)
+
+print(number, type(number))
+print(decimal_number, type(decimal_number))
+print(text_again, type(text_again))
+
+# Convert input into integers before adding.
+first = int(input("Enter first number: "))
+second = int(input("Enter second number: "))
+print("Sum:", first + second)
+
+
+# 6. OPERATORS
+# Operators perform calculations and logical operations.
+
+print("\n--- 6. OPERATORS ---")
+
+a = 10
+b = 3
+
+# Arithmetic operators
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor division:", a // b)
+print("Remainder:", a % b)
+print("Power:", a ** b)
+
+# Assignment operators
+a += 2
+print("After a += 2:", a)
+
+# Logical operators
+print("AND:", 10 > 5 and 3 > 1)
+print("OR:", 10 > 5 or 3 < 1)
+print("NOT:", not (10 > 5))
+
+
+# 7. STRINGS AND STRING METHODS
+# Strings store text inside quotes.
+# Strings support indexing, slicing, and built-in methods.
+
+print("\n--- 7. STRINGS ---")
+
+text = "hello python"
+
+print("Original:", text)
+print("Length:", len(text))
+print("First character:", text[0])
+print("Last character:", text[-1])
+print("Slice:", text[0:5])
+
+print("Uppercase:", text.upper())
+print("Lowercase:", text.lower())
+print("Title case:", text.title())
+print("Capitalize:", text.capitalize())
+print("Replace:", text.replace("python", "world"))
+print("Count of o:", text.count("o"))
+print("Find python:", text.find("python"))
+print("Starts with hello:", text.startswith("hello"))
+print("Ends with python:", text.endswith("python"))
+print("Contains python:", "python" in text)
+
+print("Strip:", "  hello  ".strip())
+print("Split:", "red,green,blue".split(","))
+print("Join:", "-".join(["red", "green", "blue"]))
+
+print("Is alphabetic:", "hello".isalpha())
+print("Is numeric:", "123".isdigit())
+print("Is uppercase:", "HELLO".isupper())
+print("Is lowercase:", "hello".islower())
+print("Is alphanumeric:", "hello123".isalnum())
+
+
+# 8. LISTS AND LIST METHODS
+# Lists are ordered, changeable, and allow duplicate values.
+
+print("\n--- 8. LISTS ---")
+
+fruits = ["apple", "banana", "mango"]
+
+print("Original:", fruits)
+print("First item:", fruits[0])
+print("Last item:", fruits[-1])
+print("Slice:", fruits[0:2])
+print("Length:", len(fruits))
+
+fruits.append("orange")
+print("After append:", fruits)
+
+fruits.insert(1, "grapes")
+print("After insert:", fruits)
+
+fruits.extend(["kiwi", "pear"])
+print("After extend:", fruits)
+
+fruits.remove("banana")
+print("After remove:", fruits)
+
+removed = fruits.pop()
+print("Popped item:", removed)
+print("Current list:", fruits)
+
+print("Count of apple:", fruits.count("apple"))
+print("Index of mango:", fruits.index("mango"))
+
+fruits.sort()
+print("Sorted:", fruits)
+
+fruits.reverse()
+print("Reversed:", fruits)
+
+fruits_copy = fruits.copy()
+print("Copied list:", fruits_copy)
+
+fruits.clear()
+print("After clear:", fruits)
+
+
+# 9. TUPLES AND TUPLE METHODS
+# Tuples are ordered collections that cannot be changed.
+
+print("\n--- 9. TUPLES ---")
+
+colors = ("red", "green", "blue", "red")
+
+print("Tuple:", colors)
+print("First item:", colors[0])
+print("Last item:", colors[-1])
+print("Slice:", colors[1:3])
+print("Length:", len(colors))
+print("Count of red:", colors.count("red"))
+print("Index of blue:", colors.index("blue"))
+
+single_item = ("Python",)
+print("Single-item tuple:", single_item)
+print("Type:", type(single_item))
+
+
+# 10. SETS AND SET METHODS
+# Sets store unique values and do not support indexing.
+
+print("\n--- 10. SETS ---")
+
+numbers = {1, 2, 2, 3, 4}
+print("Duplicates removed:", numbers)
+
+numbers.add(5)
+print("After add:", numbers)
+
+numbers.update([6, 7])
+print("After update:", numbers)
+
+numbers.discard(2)
+print("After discard:", numbers)
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print("Union:", a.union(b))
+print("Intersection:", a.intersection(b))
+print("Difference:", a.difference(b))
+print("Symmetric difference:", a.symmetric_difference(b))
+print("Is 1 present?", 1 in a)
+
+numbers.clear()
+print("After clear:", numbers)
+
+
+# 11. DICTIONARIES AND DICTIONARY METHODS
+# Dictionaries store information as key-value pairs.
+
+print("\n--- 11. DICTIONARIES ---")
+
+student = {
+    "name": "Bhagya",
+    "age": 22,
+    "course": "Python"
+}
+
+print("Dictionary:", student)
+print("Name:", student["name"])
+print("Age:", student.get("age"))
+
+student["age"] = 23
+student["city"] = "Hyderabad"
+print("Updated dictionary:", student)
+
+print("Keys:", student.keys())
+print("Values:", student.values())
+print("Items:", student.items())
+
+student.update({"course": "Python Basics"})
+print("After update:", student)
+
+removed_city = student.pop("city")
+print("Removed city:", removed_city)
+
+for key, value in student.items():
+    print(key, ":", value)
+
+
+# 12. BOOLEAN VALUES
+# Boolean values are True or False.
+
+print("\n--- 12. BOOLEAN VALUES ---")
+
+is_student = True
+is_finished = False
+
+print(is_student)
+print(is_finished)
+print(type(is_student))
+print("bool(1):", bool(1))
+print("bool(0):", bool(0))
+print("bool(empty string):", bool(""))
+print("bool(non-empty string):", bool("hello"))
+
+
+# 13. COMPARISON OPERATORS
+# Comparison operators compare values and return True or False.
+
+print("\n--- 13. COMPARISON OPERATORS ---")
+
+a = 10
+b = 5
+
+print("Equal:", a == b)
+print("Not equal:", a != b)
+print("Greater than:", a > b)
+print("Less than:", a < b)
+print("Greater than or equal:", a >= b)
+print("Less than or equal:", a <= b)
+
+
+# 14. MEMBERSHIP AND IDENTITY OPERATORS
+# Membership checks whether a value exists in a collection.
+# Identity checks whether two variables refer to the same object.
+
+print("\n--- 14. MEMBERSHIP AND IDENTITY ---")
+
+languages = ["Python", "Java", "SQL"]
+
+print("Python in languages:", "Python" in languages)
+print("C++ not in languages:", "C++" not in languages)
+
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print("a is b:", a is b)
+print("a is c:", a is c)
+print("a equals c:", a == c)
+print("a is not c:", a is not c)
+
+
+
