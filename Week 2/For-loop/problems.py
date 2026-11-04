@@ -231,6 +231,7 @@
 
 # 24. Calculate the average of numbers in a list using a for loop ?
 
+
 # 25. Print a countdown from a given number using a for loop ?
 # 26. Generate a pattern of numbers using nested for loops ?
 # 27. Calculate the product of elements in a list using a for loop ?
