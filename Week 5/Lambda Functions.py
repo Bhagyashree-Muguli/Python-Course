@@ -24,6 +24,6 @@
 # print(check(4))
 
 # Can you demonstrate a lambda function to extract the last character from a string in Python?
-extract = lambda a: a[-1]
+# extract = lambda a: a[-1]
 
-print(extract("bhagi"))
+# print(extract("bhagi"))
